@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="app-header">
+        <p class="app-title">Todo App</p>
+        <div class="add-task">
+          <button class="add-btn" id="addBtn">+</button>
+        </div>
+      </div>
+
+      <!-- Task Input Form (hidden by default in CSS, toggled via JS) -->
+      <div class="input-group hidden" id="inputGroup">
+        <input type="text" id="taskTitle" placeholder="Enter task title" />
+        <input type="text" id="taskDesc" placeholder="Enter task description" />
+        <div class="form-btns">
+          <button type="button" id="cancelBtn" class="cancel-btn">
+            Cancel
+          </button>
+          <button type="button" id="saveBtn" class="save-btn">Save</button>
+        </div>
+      </div>
+      <div class="task-container" id="taskContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
